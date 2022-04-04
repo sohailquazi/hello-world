@@ -17,14 +17,7 @@ pipeline {
             }
         }
         
-        stage ('docker image build')
-        {
-            steps {
-                   
-                        sh 'mvn package Dockerfile:build'
-                         
-                  }
+       
           }
           
         }
-    }
