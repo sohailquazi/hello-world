@@ -21,7 +21,7 @@ pipeline {
         {
             steps {
                    
-                        sh 'mvn Dockerfile:build'
+                        sh 'mvn dockerfile:build'
                          
                   }
           }
