@@ -1,6 +1,6 @@
 From tomcat:9-jre9 
 
-#COPY /home/ubuntu/hello-world/hello-world.war /usr/local/tomcat/webapps
+COPY /home/ubuntu/hello-world/hello-world.war /usr/local/tomcat/webapps
 #
 # Build stage
 #
@@ -13,5 +13,5 @@ From tomcat:9-jre9
 # Package stage
 #
 #FROM openjdk:11-jre-slim
-EXPOSE 8090
+#EXPOSE 8090
 #ENTRYPOINT ["java","-war","/usr/local/lib/hello-world.war"]
