@@ -14,4 +14,4 @@ RUN mvn -f /home/ubuntu/hello-world/pom.xml clean package
 #
 FROM openjdk:11-jre-slim
 EXPOSE 8090
-ENTRYPOINT ["java","-jar","/usr/local/lib/hello-world.war"]
+ENTRYPOINT ["java","-war","/usr/local/lib/hello-world.war"]
