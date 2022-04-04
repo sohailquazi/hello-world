@@ -13,6 +13,6 @@ RUN mvn -f /home/ubuntu/hello-world/pom.xml clean package
 # Package stage
 #
 FROM openjdk:11-jre-slim
-COPY --from=build /home/ubuntu/hello-world/hello-world.war /usr/local/lib/hello-world.war
+COPY /home/ubuntu/hello-world/hello-world.war /usr/local/lib/hello-world.war
 EXPOSE 8090
 ENTRYPOINT ["java","-jar","/usr/local/lib/hello-world.war"]
