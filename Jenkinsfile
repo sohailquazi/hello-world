@@ -8,9 +8,3 @@ pipeline {
         }
       }
     }
-    post {
-      always {
-        cleanWs()
-      }
-    }
-}
